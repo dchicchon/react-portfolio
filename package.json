@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/dchicchon/react-portfolio/issues"
   },
-  "homepage": "https://github.com/dchicchon/react-portfolio#readme"
+  "homepage": "https://github.com/dchicchon/react-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
