@@ -10,14 +10,16 @@ import Contact from './components/Resume';
 import Splitting from 'splitting';
 import ReactGA from 'react-ga';
 
+// Utils
+import API from './Utils/API';
+
+
 
 function initializeAnalytics() {
   ReactGA.initialize('UA-148238028-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
 
 }
-
-// Utils
 
 class App extends Component {
 
@@ -32,6 +34,8 @@ class App extends Component {
     const target = document.querySelector(".splitting");
     const results = Splitting({ target: target, by: 'chars', key: null })
     console.log(results)
+    API.getWaka();
+
   }
 
   changePage = (e, page) => {
@@ -60,8 +64,8 @@ class App extends Component {
           {this.state.page === 'Portfolio' ? <Portfolio /> : ''}
           {this.state.page === 'Resume' ? <Contact /> : ''}
         </div>
-        <div className='footer'>
-
+        <div className='footer center'>
+          Copyright © Daniel Chicchon 2019
         </div>
       </div>
     )
