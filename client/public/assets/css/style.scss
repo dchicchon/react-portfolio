@@ -82,9 +82,6 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
     bottom: 0;
     left: 0;
     padding: 1.3rem;
-    // background: #e6e6e6;
-    // background: #F0F8FF;
-    // background: #e6f7ff;
     background: #efefef;
     text-align: center;
 }
@@ -100,10 +97,6 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
     transform-origin: 50% 100%;
 }
 
-// @keyframes float {
-
-// }
-
 .char:hover {
     cursor: pointer;
     user-select: none;
@@ -116,6 +109,8 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
     }
 
 }
+
+
 // =====================
 // Links
 .linksFadeIn {

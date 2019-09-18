@@ -21,7 +21,7 @@ class Contact extends Component {
                     </div>
                     <div className='row focus'>
                         <h5>Proficient Skills</h5>
-                        <div className='col s3 m4'>
+                        <div className='col s5 m4'>
                             {/* Add Links to tech */}
                             <ul>
                                 <li>React.js</li>
@@ -29,14 +29,14 @@ class Contact extends Component {
                                 <li>Python</li>
                             </ul>
                         </div>
-                        <div className='col s3 m4'>
+                        <div className='col s5 m4'>
                             <ul>
                                 <li>Express.js</li>
                                 <li>Git</li>
                                 <li>JQuery</li>
                             </ul>
                         </div>
-                        <div className='col s3 m4'>
+                        <div className='col s5 m4'>
                             <ul>
                                 <li>Node.js</li>
                                 <li>MySQL</li>

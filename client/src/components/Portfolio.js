@@ -36,7 +36,7 @@ class Portfolio extends Component {
         return (
             <div>
                 {/* I want to have cards here for each of my projects */}
-                
+
                 <div className={this.state.visible ? 'FadeIn row' : 'row'}>
 
                     {this.state.projects.map((project, i) => (
@@ -45,12 +45,8 @@ class Portfolio extends Component {
                         >
                             <div className='card hoverable rise'>
                                 <div className='card-image'>
-                                    {/* <i className={project.logo}>Add Image Here</i> */}
                                     <img className='responsive-img activator' src={project.logo} alt='project' />
                                 </div>
-                                {/* <div className='card-content'>
-                                    <span className='card-title activator grey-text text-darken-4'>{project.name}</span>
-                                </div> */}
                                 <div className='card-reveal'>
                                     <span className='card-title'>{project.name} <i className="material-icons right">close</i></span>
                                     <p>{project.description}</p>
