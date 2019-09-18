@@ -20,7 +20,7 @@ class Contact extends Component {
                         <p> <a className='resumeLink' href='https://www.linkedin.com/in/dchicchon/'>LinkedIn</a> <a className='resumeLink' href='https://github.com/dchicchon'>Github</a> </p>
                     </div>
                     <div className='row focus'>
-                        <h5>Proficient Skills</h5>
+                        <h5>Skills</h5>
                         <div className='col s5 m4'>
                             {/* Add Links to tech */}
                             <ul>
