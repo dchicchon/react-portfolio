@@ -30,12 +30,19 @@ class About extends Component {
 
     render() {
         return (
-            <div className={this.state.visible ? 'FadeIn row' : 'row'}>
-                <div className='col m6 center'>
-                    <img className='responsive-img' onMouseEnter={this.mouseOn} onMouseLeave={this.mouseOff} src={this.state.currentImg} alt='profile' />
+            <div>
+                <div className={this.state.visible ? 'FadeIn row' : 'row'}>
+                    <div className='col m6 center'>
+                        <img className='responsive-img hoverable' onMouseEnter={this.mouseOn} onMouseLeave={this.mouseOff} src={this.state.currentImg} alt='profile' />
+                    </div>
+                    <div className='col m6'>
+                        <p>Welcome to my page! I am an aspiring Full Stack Web Developer that is currently based in the San Francisco Bay Area. Currently I am working at UC Berkeley Extension as a Teaching Assistant for Full Stack Web Development Course.  </p>
+                        <br/>
+                        <p>In my free time, you can usually find me hiking around Lands End in the Outer Richmond or taking a nap at Ocean Beach.</p>
+                    </div>
                 </div>
-                <div className='col m6'>
-                    <p>Hello! Welcome to my page. As you may already know, my name is Danny. I am an aspiring Full Stack Web Developer that is currently based in the San Francisco Bay Area</p>
+                <div className={'picture'}>
+            
                 </div>
             </div>
         )

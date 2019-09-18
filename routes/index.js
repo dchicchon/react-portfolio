@@ -2,12 +2,12 @@ const router = require("express").Router();
 const axios = require("axios");
 const path = require("path");
 
-console.log(process.env.WAKA_API_KEY)
-
 // router.get("/waka", function (req, res) {
-//     axios.get(`https://wakatime.com/api/v1/users/dchicchon/durations?api_key${process.env.WAKA_API_KEY}`)
+//     console.log("Please make request")
+//     axios.get(`https://wakatime.com/api?api_key=${process.env.WAKA_API_KEY}/v1/users/dchicchon/durations`)
 //         .then(user => {
-//             console.log(user)
+//             console.log(user.config)
+//             console.log(user.request)
 //         })
 // })
 
