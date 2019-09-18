@@ -45,7 +45,7 @@ class Portfolio extends Component {
                             <div className='card hoverable rise'>
                                 <div className='card-image'>
                                     {/* <i className={project.logo}>Add Image Here</i> */}
-                                    <img className='activator' src={project.logo} alt='project' height='275rem' />
+                                    <img className='responsive-img activator' src={project.logo} alt='project' />
                                 </div>
                                 {/* <div className='card-content'>
                                     <span className='card-title activator grey-text text-darken-4'>{project.name}</span>
@@ -56,9 +56,12 @@ class Portfolio extends Component {
                                     <br />
                                     <p>Technologies: <span>{project.tech}</span> </p>
                                     <br />
-                                    <p>Links: <a className='projectLink' href={project.siteLink} rel='noopener noreferrer' target='_blank'>Site</a> <a className='projectLink' href={project.repoLink} rel='noopener noreferrer' target='_blank'>Repository</a></p>
-                                    
-                                    
+                                    <p>Links:
+                                        <a className='projectLink' href={project.siteLink} rel='noopener noreferrer' target='_blank'> Site </a>
+                                        <a className='projectLink' href={project.repoLink} rel='noopener noreferrer' target='_blank'>Repository</a>
+                                    </p>
+
+
                                     {/* Add Photo Authors from Unsplash */}
                                     {/* <p className='author'>{project.photoAuthor}</p> */}
                                 </div>

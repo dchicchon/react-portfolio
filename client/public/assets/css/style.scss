@@ -1,23 +1,19 @@
-html, body {
+$break-small: 450px;
+$break-large: 1200px;
+
+html {
     height:100%;
+    box-sizing: border-box;
+    // background: rgb(235, 233, 233);
     // background: #83B4B3;
     // font-family: 'Lexend Deca', sans-serif;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(180, 179, 179);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(163, 162, 162);
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 h1 {
@@ -25,11 +21,18 @@ h1 {
     padding-top: 2rem;
     font-size: 6rem;
     font-weight: 300;
+    @media screen and (max-width: $break-small) {
+        font-size: 3.2rem;
+    }
 }
 
 h4 {
     font-size: 3rem;
     margin-bottom: 0 !important;
+    @media screen and (max-width: $break-small) {
+        font-size: 2.1rem;
+        margin-top: 0;
+    }
 }
 
 h5 {
@@ -46,11 +49,23 @@ li {
     font-size: 1.09rem;
 }
 
+#main {
+    background: white;
+}
+
 .col.s4 {
-    margin: 0;
-    padding: 0.5rem;
+    // margin: right;
+    padding: 0.5rem 0;
     font-weight: 100;
 }
+
+.col.s3 {
+    // width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-weight: 100;
+}
+
 
 
 // Header
@@ -59,6 +74,19 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
 .header {
     animation-name: fadeIn;
     animation-duration: 1s;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    // background: #e6e6e6;
+    // background: #F0F8FF;
+    // background: #e6f7ff;
+    background: #efefef;
+    text-align: center;
 }
 
 .char {
@@ -116,19 +144,23 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
 }
 
 .navLinks{
+    // padding: 0 !important;
+    // margin-right: 0.5rem !important;
     transition: transform 0.5s, background-color 0.5s;
 }
 
 .navLinks:hover {
     cursor: pointer;
     transform: translateY(-20%);
-    background-color: rgb(243, 241, 241);
+    background: #efefef;
+    // background-color: rgb(243, 241, 241);
 }
 
 .navLinksActive {
 
     transform: translateY(-20%);
-    background-color: rgb(243, 241, 241);
+    background-color: #efefef;  
+    // background-color: rgb(243, 241, 241);
 }
 // ===============================
 // Portfolio
@@ -164,6 +196,10 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
 }
 
 // Resume
+.resume-container {
+    margin: 0 2rem;
+}
+
 .resume {
     padding-bottom: 0.2rem;
     margin-bottom: 3rem;
@@ -187,3 +223,28 @@ $colors: red, orange ,gold, green, turquoise, blue, purple, magenta;
 .focus:hover {
     background: rgb(243, 241, 241);
 }
+
+// Scrollbar
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(180, 179, 179);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 162, 162);
+}
+
+
+// @media screen and (min-width: $break-small) {
+//     h1 {
+//         font-size: 4rem;
+//     }
+// }

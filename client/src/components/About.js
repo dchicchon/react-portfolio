@@ -32,7 +32,7 @@ class About extends Component {
         return (
             <div className={this.state.visible ? 'FadeIn row' : 'row'}>
                 <div className='col m6 center'>
-                    <img onMouseEnter={this.mouseOn} onMouseLeave={this.mouseOff} src={this.state.currentImg} alt='profile' width='460rem' />
+                    <img className='responsive-img' onMouseEnter={this.mouseOn} onMouseLeave={this.mouseOff} src={this.state.currentImg} alt='profile' />
                 </div>
                 <div className='col m6'>
                     <p>Hello! Welcome to my page. As you may already know, my name is Danny. I am an aspiring Full Stack Web Developer that is currently based in the San Francisco Bay Area</p>

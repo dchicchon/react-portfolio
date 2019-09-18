@@ -10,8 +10,12 @@ import Contact from './components/Resume';
 import Splitting from 'splitting';
 import ReactGA from 'react-ga';
 
-const trackingID = 'UA-148238028-1';
-ReactGA.initialize(trackingID);
+
+function initializeAnalytics() {
+  ReactGA.initialize('UA-148238028-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
+}
 
 // Utils
 
@@ -22,6 +26,7 @@ class App extends Component {
     waka: ''
 
   }
+
 
   componentDidMount() {
     const target = document.querySelector(".splitting");
@@ -35,19 +40,29 @@ class App extends Component {
   }
 
   render() {
-
+    initializeAnalytics()
     return (
-      <div className='container'>
-        <h1 className='center header splitting'>Daniel Chicchon</h1>
-        {/* Add WakaTime API to check my progress */}
-        <Navbar
-          onChange={this.changePage}
-          activeLink={this.state.page}
-          links={["About", "Portfolio", "Resume"]}
-        />
-        {this.state.page === 'About' ? <About /> : ''}
-        {this.state.page === 'Portfolio' ? <Portfolio /> : ''}
-        {this.state.page === 'Resume' ? <Contact /> : ''}
+      <div>
+        <div className='heading'>
+          <h1 className='center header splitting col m12 s6'>Daniel Chicchon</h1>
+          {/* Add WakaTime API to check my progress */}
+          <div className='container'>
+            <Navbar
+              onChange={this.changePage}
+              activeLink={this.state.page}
+              links={["About", "Portfolio", "Resume"]}
+            />
+          </div>
+        </div>
+        <div id='main' className='container'>
+
+          {this.state.page === 'About' ? <About /> : ''}
+          {this.state.page === 'Portfolio' ? <Portfolio /> : ''}
+          {this.state.page === 'Resume' ? <Contact /> : ''}
+        </div>
+        <div className='footer'>
+
+        </div>
       </div>
     )
   }

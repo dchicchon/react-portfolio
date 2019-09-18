@@ -1,21 +1,14 @@
-html, body {
+html {
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #b4b3b3;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #a3a2a2;
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 h1 {
@@ -25,9 +18,22 @@ h1 {
   font-weight: 300;
 }
 
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
 h4 {
   font-size: 3rem;
   margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 450px) {
+  h4 {
+    font-size: 2.1rem;
+    margin-top: 0;
+  }
 }
 
 h5 {
@@ -44,9 +50,18 @@ li {
   font-size: 1.09rem;
 }
 
+#main {
+  background: white;
+}
+
 .col.s4 {
-  margin: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  font-weight: 100;
+}
+
+.col.s3 {
+  margin: 0 auto;
+  padding: 0.5rem 0;
   font-weight: 100;
 }
 
@@ -55,6 +70,16 @@ li {
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  background: #efefef;
+  text-align: center;
 }
 
 .char {
@@ -68,9 +93,7 @@ li {
           transform-origin: 50% 100%;
 }
 
-@-webkit-keyframes float {}
-
-@keyframes float {}.char:hover {
+.char:hover {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -166,13 +189,13 @@ li {
   cursor: pointer;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
-  background-color: #f3f1f1;
+  background: #efefef;
 }
 
 .navLinksActive {
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
-  background-color: #f3f1f1;
+  background-color: #efefef;
 }
 
 .card-reveal {
@@ -210,6 +233,10 @@ li {
   color: turquoise;
 }
 
+.resume-container {
+  margin: 0 2rem;
+}
+
 .resume {
   padding-bottom: 0.2rem;
   margin-bottom: 3rem;
@@ -234,5 +261,21 @@ li {
 
 .focus:hover {
   background: #f3f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b3b3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a2a2;
 }
 /*# sourceMappingURL=style.css.map */
