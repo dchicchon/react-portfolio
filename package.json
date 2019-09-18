@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/dchicchon/react-portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.16.2"
   }
 }

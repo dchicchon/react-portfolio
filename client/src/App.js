@@ -6,8 +6,12 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Resume';
 
-// Splitting Package
-import Splitting from 'splitting'
+// Packages
+import Splitting from 'splitting';
+import ReactGA from 'react-ga';
+
+const trackingID = 'UA-148238028-1';
+ReactGA.initialize(trackingID);
 
 // Utils
 
@@ -19,20 +23,10 @@ class App extends Component {
 
   }
 
-
-  // clickPortfolio = () => {
-  //   this.setState({
-  //     page: "Portfolio"
-  //   })
-  // }
-
-
   componentDidMount() {
     const target = document.querySelector(".splitting");
     const results = Splitting({ target: target, by: 'chars', key: null })
     console.log(results)
-
-    // setTimeout(this.clickPortfolio, 1000 * 0.5)
   }
 
   changePage = (e, page) => {
