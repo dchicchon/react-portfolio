@@ -65,7 +65,7 @@ class App extends Component {
           {this.state.page === 'Resume' ? <Contact /> : ''}
         </div>
         <div className='footer center'>
-          Copyright © Daniel Chicchon 2019
+          <p className='navLinks'>Copyright © Daniel Chicchon 2019</p>
         </div>
       </div>
     )

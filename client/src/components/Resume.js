@@ -17,7 +17,7 @@ class Contact extends Component {
                     <div className='row center focus'>
                         <h4>Daniel Chicchon</h4>
                         <p> <a className='resumeLink' href='mailto:danielchicchon@gmail.com? subject=subject text'>danielchicchon@gmail.com</a> (209)-915-8668</p>
-                        <p> <a className='resumeLink' href='https://www.linkedin.com/in/dchicchon/'>LinkedIn</a> <a className='resumeLink' href='https://github.com/dchicchon'>Github</a> </p>
+                        <p> <a className='resumeLink' href='https://www.linkedin.com/in/dchicchon/'>LinkedIn</a> <a className='resumeLink' href='https://github.com/dchicchon'>Github</a> <a className='resumeLink' href='https://wakatime.com/@aa6da2ff-a49a-4380-9d4a-19cd87da5d3a' target='_blank'>Wakatime</a> </p>
                     </div>
                     <div className='row focus'>
                         <h5>Skills</h5>
