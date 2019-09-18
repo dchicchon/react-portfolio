@@ -11,19 +11,28 @@ import Splitting from 'splitting'
 
 // Utils
 
-
 class App extends Component {
 
   state = {
-    page: '',
+    page: 'Portfolio',
     waka: ''
 
   }
+
+
+  // clickPortfolio = () => {
+  //   this.setState({
+  //     page: "Portfolio"
+  //   })
+  // }
+
 
   componentDidMount() {
     const target = document.querySelector(".splitting");
     const results = Splitting({ target: target, by: 'chars', key: null })
     console.log(results)
+
+    // setTimeout(this.clickPortfolio, 1000 * 0.5)
   }
 
   changePage = (e, page) => {
