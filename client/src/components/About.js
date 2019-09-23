@@ -37,12 +37,15 @@ class About extends Component {
                     </div>
                     <div className='col m6'>
                         <p>Welcome to my page! I am an aspiring Full Stack Web Developer that is currently based in the San Francisco Bay Area. Currently I am working at UC Berkeley Extension as a Teaching Assistant for Full Stack Web Development Course.  </p>
-                        <br/>
+                        <br />
                         <p>In my free time, you can usually find me hiking around Lands End in the Outer Richmond or taking a nap at Ocean Beach.</p>
                     </div>
                 </div>
                 <div className={'picture'}>
-            
+
+                </div>
+                <div className='footer center'>
+                    <p className='navLinks'>Copyright © Daniel Chicchon 2019</p>
                 </div>
             </div>
         )

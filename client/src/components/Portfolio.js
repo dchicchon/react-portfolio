@@ -66,6 +66,10 @@ class Portfolio extends Component {
                         </div>
                     ))}
                 </div>
+                
+                <div className='footer center'>
+                    <p className='navLinks'>Copyright © Daniel Chicchon 2019</p>
+                </div>
 
             </div>
         )
